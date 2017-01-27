@@ -5,13 +5,10 @@
   "main": "",
   "dependencies": {
     "axios": "^0.15.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.2",
-    "redux": "^3.5.2",
-    "redux-logger": "^2.6.1",
-    "redux-promise-middleware": "^4.2.0",
-    "redux-thunk": "^2.1.0"
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -31,7 +28,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot"
+    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
+    "build:start": "webpack && node server"
   },
   "author": "",
   "license": "ISC"
